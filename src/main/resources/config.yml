@@ -1,0 +1,33 @@
+database:
+  type: 'sqlite' # Opções válidas: 'sqlite' e 'mysql'
+  mysql:
+    address: 'localhost:3306'
+    username: 'root'
+    password: ''
+    database: 'test'
+  sqlite:
+    file: 'database/database.db'
+
+# O nome das skills deve ser igual aos do enum do mcmmo.
+# ACROBATICS, ALCHEMY, ARCHERY, AXES, EXCAVATION
+# HERBALISM, MINING, REPAIR, SWORDS
+settings:
+  booster-duration: 60 # Tempo em minutos.
+  skills:
+    - AXES
+    - SWORDS
+    - ACROBATICS
+    - EXCAVATION
+    - HERBALISM
+    - MINING
+
+itemStack:
+  id: 384
+  data: 0
+  glow: false
+  name: "&eBooster de experiência"
+  lore:
+    - '&7Clique para obter duplo xp'
+    - '&7em alguma habilidade.'
+    - ''
+    - '&eClique para usar.'

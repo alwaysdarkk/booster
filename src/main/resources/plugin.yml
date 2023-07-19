@@ -1,0 +1,7 @@
+name: booster
+version: '1.0.0'
+main: com.github.alwaysdarkk.booster.BoosterPlugin
+author: alwaysdarkk
+depend:
+  - mcMMO
+  - InventoryFramework
