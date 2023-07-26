@@ -90,13 +90,16 @@ public class SelectSkillView extends PaginatedView<SkillType> {
                 return;
             }
 
-            final int boosterDuration = configurationSection.getInt("booster-duration");
+            final int boosterDuration = configurationSection.getInt("booster-duration"),
+                    boosterMultiplier = configurationSection.getInt("booster-multiplier");
+
             final Instant expireAt = Instant.now().plus(boosterDuration, ChronoUnit.MINUTES);
 
             final Booster booster = Booster.builder()
                     .owner(player.getName())
                     .skillType(skillType)
                     .expireAt(expireAt.toEpochMilli())
+                    .multiplier(boosterMultiplier)
                     .build();
 
             boosterCache.put(booster.getOwner(), booster);

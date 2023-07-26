@@ -10,6 +10,7 @@ public class Booster {
 
     private final String owner;
     private final SkillType skillType;
+    private final int multiplier;
     private final long expireAt;
 
     public boolean isExpired() {

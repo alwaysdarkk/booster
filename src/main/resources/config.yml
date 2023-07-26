@@ -12,6 +12,7 @@ database:
 # ACROBATICS, ALCHEMY, ARCHERY, AXES, EXCAVATION
 # HERBALISM, MINING, REPAIR, SWORDS
 settings:
+  booster-multiplier: 2 # XP Ganho vezes esse valor.
   booster-duration: 60 # Tempo em minutos.
   skills:
     - AXES
